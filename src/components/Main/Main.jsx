@@ -5,7 +5,7 @@ import "../../blocks/cards.css";
 
 function Main({ weatherData, handleCardClick }) {
   return (
-    <main className="main">
+    <main>
       <WeatherCard weatherData = {weatherData}/>
       <section className="cards">
         <p className="cards__text">
