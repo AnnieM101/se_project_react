@@ -1,0 +1,29 @@
+.item-card {
+  list-style: none;
+  position: relative;
+  width: 323px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-card__image {
+  height: 326px;
+  width: 100%;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 12px;
+  gap: 21px;
+}
+
+.item-card__name {
+  border-radius: 4px;
+  font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 15px;
+  margin: 0;
+  padding: 2px 12px;
+}

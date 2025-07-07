@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    max-height: 40px;
+    align-items: flex-end;
+}
+
+.header__logo {
+  width: 89px;
+  height: 40px;
+  margin: 0 24px 0 0;
+}
+
+.header__date-location {
+    margin: 0 0 5px;
+    font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.header__button {
+border: none;
+height: 24px;
+width: 116x;
+margin: 8px 20px 7px auto;
+font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #000;
+}
+
+.header__username {
+    margin: 0 12px 7px;
+    font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+}
+
+.header__avatar {
+    margin: 0;
+}
+
+.header__user-container {
+    margin: 0 0 1px;
+    display: flex;
+    align-items: flex-end;
+}

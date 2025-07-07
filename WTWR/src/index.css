@@ -1,0 +1,9 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/font.css);
+
+#root{
+    max-width: 1360px;
+}
+*{
+    background-color: #f3f3f3;
+}
