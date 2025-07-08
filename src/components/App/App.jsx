@@ -44,7 +44,6 @@ function App() {
   }, []);
 
   return (
-    <>
       <div className="app">
         <div className="app__content">
           <Header onAddClick={onAddClick} weatherData={weatherData} />
@@ -87,6 +86,7 @@ function App() {
                 id="hot"
                 className="modal__radio-input"
                 type="radio"
+                name="radio-button"
               ></input>
               Hot
             </label>
@@ -98,6 +98,7 @@ function App() {
                 id="warm"
                 className="modal__radio-input"
                 type="radio"
+                name="radio-button"
               ></input>
               Warm
             </label>
@@ -109,6 +110,7 @@ function App() {
                 id="cold"
                 className="modal__radio-input"
                 type="radio"
+                name="radio-button"
               ></input>
               Cold
             </label>
@@ -120,7 +122,6 @@ function App() {
           closeActiveModal={closeActiveModal}
         />
       </div>
-    </>
   );
 }
 

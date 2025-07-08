@@ -6,19 +6,17 @@ function Header({ onAddClick, weatherData }) {
   const currentDate = new Date().toLocaleString('default', { month: 'long', day: 'numeric' });
 
   return (
-    <>
       <header className="header">
-        <img className="header__logo" src={wtwrLogo} />
+        <img className="header__logo" src={wtwrLogo} alt="WTWR logo" />
         <p className="header__date-location">{currentDate}, {weatherData.city}</p>
         <button onClick={onAddClick} type="button" className="header__button">
           + Add Clothes
         </button>
         <div className="header__user-container">
           <p className="header__username">USERNAME</p>
-          <img className="header__avatar" src={wtwrAvatar} />
+          <img className="header__avatar" src={wtwrAvatar} alt="user avatar"/>
         </div>
       </header>
-    </>
   );
 }
 

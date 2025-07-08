@@ -17,7 +17,6 @@ function WeatherCard({ weatherData }) {
   }
 
   return (
-    <>
       <section className="weather-card">
         <img
           className="weather-card__image"
@@ -28,7 +27,6 @@ function WeatherCard({ weatherData }) {
         />
         <p className="weather-card__temperature">{weatherData.temp.F}&deg;F</p>
       </section>
-    </>
   );
 }
 
