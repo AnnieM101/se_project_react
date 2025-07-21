@@ -96,7 +96,7 @@ const handleDeleteItem = (_id) => {
           </Routes>
           <Footer />
         </div>
-        <AddItemModal activeModal={activeModal} closeActiveModal={closeActiveModal} onAddItemModalSubmit={handleAddItemModalSubmit}></AddItemModal>
+        <AddItemModal isOpen={activeModal === "add-garment"} activeModal={activeModal} closeActiveModal={closeActiveModal} onAddItemModalSubmit={handleAddItemModalSubmit}></AddItemModal>
         <ItemModal
           activeModal={activeModal}
           card={selectedCard}
