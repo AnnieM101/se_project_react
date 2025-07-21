@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../Header/Header.css";
-import TemperatureSwitch from "../TemperatureSwitch/TemperatureSwitch";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import wtwrLogo from "../../assets/WTWR_Logo.svg";
 import wtwrAvatar from "../../assets/wtwr__avatar-img.svg";
 
@@ -11,7 +11,7 @@ function Header({ onAddClick, weatherData }) {
       <header className="header">
         <Link to="/" className="header__link"><img className="header__logo" src={wtwrLogo} alt="WTWR logo" /></Link>
         <p className="header__date-location">{currentDate}, {weatherData.city}</p>
-        <TemperatureSwitch></TemperatureSwitch>
+        <ToggleSwitch></ToggleSwitch>
         <button onClick={onAddClick} type="button" className="header__button">
           + Add Clothes
         </button>
