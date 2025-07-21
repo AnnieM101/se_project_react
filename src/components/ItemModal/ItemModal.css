@@ -1,5 +1,6 @@
 .modal__content_type_image {
     padding: 0;
+    margin: 0;
 }
 .modal__close-button-preview {
   position: absolute;
@@ -35,4 +36,23 @@
   font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
+}
+
+.modal__delete-button{
+  border: none;
+  font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 77, 0, 1);
+  background-color: transparent;
+  margin: 0 34px;
+}
+
+.modal__footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__content{
+  padding: 0;
 }

@@ -11,21 +11,21 @@
   visibility: hidden;
 }
 
-.modal_opened{
-    visibility: visible;
+.modal_opened {
+  visibility: visible;
 }
 
-.modal__content{
-    box-sizing: border-box;
-    max-width: 496px;
-    background-color: #f3f3f3;
-    padding: 28px 28px 36px 28px; 
-    position: relative; 
-    border-color: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    border-width: 1px;
-    border-style: solid;
-    width: 100%;
+.modal__content {
+  box-sizing: border-box;
+  max-width: 496px;
+  background-color: #f3f3f3;
+  padding: 28px 28px 36px 28px;
+  position: relative;
+  border-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
 }
 
 .modal__form {
@@ -59,27 +59,42 @@
   border-top-style: none;
   border-right-style: none;
 }
+
+.modal__input:invalid {
+  color: rgba(255, 77, 0, 1);
+}
+
 .modal__radio-buttons {
-    border: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column; 
-    margin-top: 24px;
-    margin-bottom: 32px;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 .modal__legend {
   font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
- 
-}
-.modal__label_type_radio {
-
 }
 .modal__radio-input {
-    margin-right: 11px;
-    accent-color: rgba(0, 0, 0, 1);
+  margin-right: 11px;
+  color: rgba(0, 0, 0, 0.5);
 }
+
+.modal__radio-input:checked {
+  color: rgba(0, 0, 0, 1);
+  accent-color: #000000;
+}
+
+.modal__label_type_radio:disabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__label_type_radio {
+  color: rgba(0, 0, 0, 1);
+}
+
 .modal__submit-button {
   font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -92,12 +107,12 @@
   border: none;
 }
 
-.modal__submit-button:hover{
-    background-color: rgba(0, 0, 0, 0.6);
+.modal__submit-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.modal__submit-button:disabled{
-background-color: rgba(0, 0, 0, 0.3);
+.modal__submit-button:disabled {
+  opacity: 30%;
 }
 
 .modal__close-button {
@@ -108,4 +123,8 @@ background-color: rgba(0, 0, 0, 0.3);
   right: 28px;
   border: none;
   background-image: url(../../assets/close_icon.svg);
+}
+
+.modal__content_type_image {
+  padding: 0;
 }

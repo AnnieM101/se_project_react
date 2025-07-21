@@ -10,6 +10,10 @@
   margin: 0 24px 0 0;
 }
 
+.header__link{
+text-decoration: none;
+}
+
 .header__date-location {
     margin: 0 0 5px;
     font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
@@ -22,7 +26,7 @@
 border: none;
 height: 24px;
 width: 116x;
-margin: 8px 20px 7px auto;
+margin: 8px 20px 7px 20px;
 font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
 font-size: 20px;
 line-height: 24px;

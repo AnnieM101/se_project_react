@@ -1,0 +1,60 @@
+.temperature-switch {
+  height: 28px;
+  width: 56px;
+  border: 2px solid rgba(126, 126, 126, 1);
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 3px;
+}
+.temperature-switch__checkbox {
+  opacity: 0;
+}
+.temperature-switch__text {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-family: "Cabinet Grotesk Bold", "Arial", sans-serif;
+  line-height: 100%;
+  text-align: center;
+  top: 7px;
+}
+.temperature-switch__text_F {
+  left: 9px;
+  background-color: transparent;
+}
+.temperature-switch__text_C {
+  right: 9px;
+  background-color: transparent;
+}
+.temperature-switch__text_white{
+ color: rgba(255, 255, 255, 1);
+}
+
+.temperature-switch__circle {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  left: 0;
+  transition: all 0.25s;
+}
+
+.temperature-switch__checkbox:checked ~ .temperature-switch__circle {
+  left: 28px;
+}
+
+.temperature-switch__checkbox:hover ~ .temperature-switch__circle {
+  width: 30px;
+}
+.temperature-switch:hover{
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.temperature-switch__checkbox:hover ~ .temperature-switch__text_C {
+  color: rgba(0, 0, 0, 1);
+}
