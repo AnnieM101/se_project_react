@@ -8,10 +8,7 @@ function AddItemModal({closeActiveModal, activeModal, onAddItemModalSubmit, isOp
     const [weather, setWeather] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
-        onAddItemModalSubmit({name, imageUrl, weather, /*key*/});
-        setImageUrl("");
-        setName("");
-        setWeather("");
+        onAddItemModalSubmit({name, imageUrl, weather,});
     }
 
   return (

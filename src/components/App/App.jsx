@@ -28,6 +28,9 @@ function App() {
 
   const onAddClick = () => {
     setActiveModal("add-garment");
+    setImageUrl("");
+    setName("");
+    setWeather("");
     console.log("Add button clicked");
   };
 
