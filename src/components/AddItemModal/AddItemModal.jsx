@@ -12,13 +12,15 @@ function AddItemModal({
   const [imageUrl, setImageUrl] = useState("");
   const [weather, setWeather] = useState("");
   const handleSubmit = (e) => {
-    e.preventDefault();
-    onAddItemModalSubmit({ name, imageUrl, weather });
-    useEffect(() => {
-      setName("");
-      setImageUrl("");
-      setWeather("");
-    }, [isOpen]);
+  e.preventDefault();
+  onAddItemModalSubmit({ name, imageUrl, weather });
+};
+
+useEffect(() => {
+  setName("");
+  setImageUrl("");
+  setWeather("");
+}, [isOpen]);
   };
 
   return (
