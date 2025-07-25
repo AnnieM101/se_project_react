@@ -21,7 +21,6 @@ useEffect(() => {
   setImageUrl("");
   setWeather("");
 }, [isOpen]);
-  };
 
   return (
     <ModalWithForm
